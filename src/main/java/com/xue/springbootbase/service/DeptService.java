@@ -11,12 +11,14 @@ import java.util.List;
  */
 public interface DeptService {
 
-    int insert(DeptDO deptDO);
+    void insert();
 
     int update(DeptDO deptDO);
 
     int delete(String deptno);
 
     List<DeptDO> findList(DeptDO deptDO);
+
+    void insertDeptRecord() throws Exception;
 
 }
